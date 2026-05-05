@@ -1,0 +1,20 @@
+{
+  "name": "local-emotion-infographic-plugins",
+  "interface": {
+    "displayName": "Local Emotion Infographic Plugins"
+  },
+  "plugins": [
+    {
+      "name": "emotion-infographic-studio",
+      "source": {
+        "source": "local",
+        "path": "./plugins/emotion-infographic-studio"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Creativity"
+    }
+  ]
+}

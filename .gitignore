@@ -1,0 +1,4 @@
+__pycache__/
+*.pyc
+emotion-infographic-run/
+*.tmp.html

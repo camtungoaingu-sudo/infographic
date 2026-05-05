@@ -1,0 +1,35 @@
+{
+  "name": "emotion-infographic-studio",
+  "version": "0.1.0",
+  "description": "End-to-end product image to storyboard infographic and video prompt pipeline.",
+  "author": {
+    "name": "Local Codex User"
+  },
+  "license": "MIT",
+  "keywords": [
+    "storyboard",
+    "infographic",
+    "product-creative",
+    "video-prompt",
+    "image-generation"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Emotion Infographic Studio",
+    "shortDescription": "Turn product photos into storyboard boards",
+    "longDescription": "Analyzes a product image, writes campaign context, plans four ad scenes, coordinates start and end frame generation, renders a storyboard infographic PNG, and writes a final video-generation prompt.",
+    "developerName": "Local Codex User",
+    "category": "Creativity",
+    "capabilities": [
+      "Interactive",
+      "Write",
+      "Image generation orchestration"
+    ],
+    "defaultPrompt": [
+      "Use $emotion-infographic-studio with this product image.",
+      "Create a 15s storyboard board and video prompt.",
+      "Generate scene frames, infographic, and final prompt."
+    ],
+    "brandColor": "#FF3399"
+  }
+}

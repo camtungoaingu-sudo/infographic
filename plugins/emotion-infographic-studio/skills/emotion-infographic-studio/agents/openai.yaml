@@ -1,0 +1,7 @@
+interface:
+  display_name: "Emotion Infographic Studio"
+  short_description: "Automate product storyboard creative runs"
+  default_prompt: "Use $emotion-infographic-studio with this product image to create context, scene frames, an infographic, and a video prompt."
+
+policy:
+  allow_implicit_invocation: true

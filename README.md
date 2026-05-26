@@ -44,3 +44,18 @@ When triggered with a product image, the plugin skill instructs Codex to:
 5. Write a final video generation prompt.
 
 If image generation is unavailable in the current Codex environment, the skill still writes frame prompts and renders the infographic with product image placeholders.
+
+## New project planning doc
+
+- `docs/pixel_to_vector_plan_vi.md`: detailed Vietnamese implementation plan for a Python desktop app that performs color quantization, region extraction, and gap-free SVG/PDF vector export.
+
+## Pixel to Vector app (downloadable)
+
+A runnable desktop prototype is included in `pixel_to_vector/`.
+
+Windows quick start:
+
+```powershell
+cd pixel_to_vector
+run_windows.bat
+```

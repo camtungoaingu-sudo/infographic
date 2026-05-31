@@ -14,7 +14,7 @@ unsloth/gemma-4-E4B-it-GGUF:UD-Q4_K_XL
 
 ### Option A: upload only the notebook
 
-Download `Unsloth_Gemma_Chat_Colab.ipynb`, upload it to Google Drive / Colab, choose a GPU runtime, then run all cells. The notebook is self-contained: it clones upstream Unsloth, runs setup, writes the launcher into `/content`, and opens chat.
+Download `Unsloth_Gemma_Chat_Colab.ipynb`, upload it to Google Drive / Colab, choose a GPU runtime, then run all cells. The notebook is self-contained: it clones upstream Unsloth, installs llama.cpp, writes the launcher into `/content`, and opens chat.
 
 ### Option B: run from this repo/folder
 
@@ -27,8 +27,7 @@ bash unsloth_gemma_chat/setup_and_launch.sh
 The shell script will:
 
 1. Clone `https://github.com/unslothai/unsloth.git` into `/content/unsloth`.
-2. Run Unsloth's upstream `studio/setup.sh --local` with chat-only flags:
-   `UNSLOTH_STUDIO_LLAMA_ONLY=1` and `SKIP_STUDIO_FRONTEND=1`.
+2. Install a prebuilt `llama-server` via Unsloth's upstream `studio/install_llama_prebuilt.py`.
 3. Start the installed `llama-server` with `-hf unsloth/gemma-4-E4B-it-GGUF:UD-Q4_K_XL`.
 4. Render the ready-to-chat llama.cpp UI in Colab through the Colab port proxy.
 

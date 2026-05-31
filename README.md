@@ -47,10 +47,9 @@ If image generation is unavailable in the current Codex environment, the skill s
 
 ## Minimal Unsloth Gemma 4 chat launcher
 
-This repo also includes a chat-only launcher in `unsloth_gemma_chat/`. It keeps
-Unsloth's upstream `studio/setup.sh --local` environment pipeline, but sets
-`UNSLOTH_STUDIO_LLAMA_ONLY=1` and `SKIP_STUDIO_FRONTEND=1` so the full Studio UI
-is not rebuilt. After setup, it starts `llama-server` with
+This repo also includes a chat-only launcher in `unsloth_gemma_chat/`. It uses
+Unsloth's upstream `studio/install_llama_prebuilt.py` llama.cpp installer instead
+of the full Studio setup path, then starts `llama-server` with
 `unsloth/gemma-4-E4B-it-GGUF:UD-Q4_K_XL` and opens the ready chat UI directly.
 
 For the easiest Colab flow, download `unsloth_gemma_chat/Unsloth_Gemma_Chat_Colab.ipynb`, upload that single notebook to Google Drive / Colab, select a GPU runtime, and run all cells. The notebook is self-contained and writes the launcher into `/content` automatically.

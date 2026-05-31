@@ -44,3 +44,29 @@ When triggered with a product image, the plugin skill instructs Codex to:
 5. Write a final video generation prompt.
 
 If image generation is unavailable in the current Codex environment, the skill still writes frame prompts and renders the infographic with product image placeholders.
+
+## Minimal Unsloth Gemma 4 chat launcher
+
+This repo also includes a chat-only launcher in `unsloth_gemma_chat/`. It keeps
+Unsloth's upstream `studio/setup.sh --local` environment pipeline, but sets
+`UNSLOTH_STUDIO_LLAMA_ONLY=1` and `SKIP_STUDIO_FRONTEND=1` so the full Studio UI
+is not rebuilt. After setup, it starts `llama-server` with
+`unsloth/gemma-4-E4B-it-GGUF:UD-Q4_K_XL` and opens the ready chat UI directly.
+
+For the easiest Colab flow, download `unsloth_gemma_chat/Unsloth_Gemma_Chat_Colab.ipynb`, upload that single notebook to Google Drive / Colab, select a GPU runtime, and run all cells. The notebook is self-contained and writes the launcher into `/content` automatically.
+
+If this repository/folder is already present in the runtime, you can also run:
+
+```bash
+bash unsloth_gemma_chat/setup_and_launch.sh
+```
+
+Useful knobs:
+
+```bash
+export UNSLOTH_CHAT_MODEL="unsloth/gemma-4-E4B-it-GGUF:UD-Q4_K_XL"
+export UNSLOTH_CHAT_CTX=4096
+export UNSLOTH_CHAT_PORT=8888
+export UNSLOTH_CHAT_EXTRA_ARGS="--temp 1.0 --top-p 0.95"
+bash unsloth_gemma_chat/setup_and_launch.sh
+```

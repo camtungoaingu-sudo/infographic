@@ -51,6 +51,7 @@ This repo also includes a chat-only launcher in `unsloth_gemma_chat/`. It uses
 Unsloth's upstream `studio/install_llama_prebuilt.py` llama.cpp installer instead
 of the full Studio setup path, then starts `llama-server` with
 `unsloth/gemma-4-E4B-it-GGUF:UD-Q4_K_XL` and opens the ready chat UI directly.
+The included UI adds Thinking, Web Search Auto/On/Off, and Code Mode toggles.
 
 For the easiest Colab flow, download `unsloth_gemma_chat/Unsloth_Gemma_Chat_Colab.ipynb`, upload that single notebook to Google Drive / Colab, select a GPU runtime, and run all cells. The notebook is self-contained and writes the launcher into `/content` automatically.
 

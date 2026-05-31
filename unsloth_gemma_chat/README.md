@@ -1,8 +1,9 @@
 # Minimal Unsloth Gemma 4 GGUF Chat
 
-This folder keeps Unsloth's own environment setup path, then skips the full
-Unsloth Studio application and opens llama.cpp's chat UI directly with the model
-already loaded.
+This folder uses Unsloth's own `studio/install_llama_prebuilt.py` llama.cpp
+installer, skips the full Unsloth Studio application, and opens a custom chat UI
+with the model already loaded. The custom UI includes Thinking, Web Search
+Auto/On/Off, and Code Mode toggles.
 
 Default model:
 

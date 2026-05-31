@@ -53,7 +53,7 @@ of the full Studio setup path, then starts `llama-server` with
 `unsloth/gemma-4-E4B-it-GGUF:UD-Q4_K_XL` and opens the ready chat UI directly.
 The included UI adds Thinking, Web Search Auto/On/Off, and Code Mode toggles.
 
-For the easiest Colab flow, download `unsloth_gemma_chat/Unsloth_Gemma_Chat_Colab.ipynb`, upload that single notebook to Google Drive / Colab, select a GPU runtime, and run all cells. The notebook is self-contained and writes the launcher into `/content` automatically.
+For the easiest Colab flow, download `unsloth_gemma_chat/Unsloth_Gemma_Chat_Colab.ipynb`, upload that single notebook to Google Drive / Colab, select a GPU runtime, and run cells one-by-one. The notebook is self-contained, split into debug-friendly steps, and writes the launcher into `/content` automatically.
 
 If this repository/folder is already present in the runtime, you can also run:
 

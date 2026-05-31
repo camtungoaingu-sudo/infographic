@@ -15,7 +15,7 @@ unsloth/gemma-4-E4B-it-GGUF:UD-Q4_K_XL
 
 ### Option A: upload only the notebook
 
-Download `Unsloth_Gemma_Chat_Colab.ipynb`, upload it to Google Drive / Colab, choose a GPU runtime, then run all cells. The notebook is self-contained: it clones upstream Unsloth, installs llama.cpp, writes the launcher into `/content`, and opens chat.
+Download `Unsloth_Gemma_Chat_Colab.ipynb`, upload it to Google Drive / Colab, choose a GPU runtime, then run the cells one-by-one so any slow/failing step is obvious. The notebook is self-contained and split into config, clone, install, write-launcher, and launch cells: it clones upstream Unsloth, installs llama.cpp, writes the launcher into `/content`, and opens chat.
 
 ### Option B: run from this repo/folder
 
